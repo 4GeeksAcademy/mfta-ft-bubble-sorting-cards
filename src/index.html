@@ -1,4 +1,4 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -14,18 +14,23 @@
       crossorigin="anonymous"
     />
   </head>
-  <body>
+  <body class="bg-success">
     <!-- Write your HTML code here, you can delete everything withing the body tags -->
-    <div class="container-fluid text-center">
-      <h1 class="mt-5">Hello Rigo!</h1>
-      <img src="./assets/img/rigo-baby.jpg" />
-      <p class="alert alert-warning mt-4">
-        If this text is <b>not</b> centered and <b>yellow</b>, you probably have
-        an error
-      </p>
-      <div class="fixed-bottom p-4">
-        Made with ❤️ by
-        <a href="https://www.4geeksacademy.com">4Geeks Academy</a>
+    <div class="container-fluid text-center p-0">
+      <div class="d-flex bg-light p-2 gap-1">
+        <input type="number" name="cards-quantity" id="cards-quantity" />
+        <button class="btn btn-primary" id="draw-btn">Draw</button>
+        <button class="btn btn-warning" id="sort-btn">Sort</button>
+      </div>
+
+      <div class="d-flex flex-column align-items-start mb-4 p-2">
+        <h2>Original</h2>
+        <div class="d-flex p-2 gap-2" id="original-cards-container"></div>
+      </div>
+
+      <div class="d-flex flex-column align-items-start mb-4 p-2">
+        <h2>Bubble Log</h2>
+        <div class="d-flex flex-column p-2 gap-2" id="bubble-log-container"></div>
       </div>
     </div>
 
